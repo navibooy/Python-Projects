@@ -5,7 +5,7 @@ import hangman_words
 import hangman_art
 from replit import clear
 #TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
-#Delete this line: word_list = ["ardvark", "baboon", "camel"]
+
 print(hangman_art.logo)
 print("Welcome to the hangman game. You only have 7 tries to guess a letter and complete the word. Goodluck!\n")
 word_list = hangman_words.word_list
@@ -16,9 +16,6 @@ end_of_game = False
 lives = 7
 
 #TODO-3: - Import the logo from hangman_art.py and print it at the start of the game.
-
-#Testing code
-#print(f'Pssst, the solution is {chosen_word}.')
 
 #Create blanks
 display = []
@@ -61,6 +58,5 @@ while not end_of_game:
         end_of_game = True
         print("You win.")
 
-    #TODO-2: - Import the stages from hangman_art.py and make this error go away.
     stages = hangman_art.stages
     print(stages[lives])
